@@ -86,3 +86,44 @@ header{
 .button-container:hover{
     background: #5a81ff;
 }
+
+.jobs-list{
+    background-color: #11121a;
+    max-width: 1250px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.jobs-list h1{
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.jobs-container{
+    display: grid;
+    gap: 40px;
+    flex-grow: 1;
+    grid-template-columns: repeat(3,1fr) ;
+    margin: 0 25px;
+    background: #11121a;
+}
+
+.job-tile{
+    background: pink;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 30px;
+    transition: transform 0.2s;
+}
+
+.job-tile:hover{
+    transform: scale(1.05);
+}
